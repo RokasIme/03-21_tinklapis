@@ -1,0 +1,62 @@
+:root {
+  --inner-width: min(calc(100% - 32px), 1312px);
+  /* min gražina mažesnė reikšmę */
+  /* calc apskaičiuoja */
+
+  /* COLORS */
+  --header-font: #fff;
+  --btn-color: #f49e43;
+  --dark-font: #333;
+  --ligt-font: #fff;
+  --bg-light: #fff;
+  /* transition */
+  --transition: all 0.3s ease;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+.btn {
+  padding: 0 32px;
+  width: fit-content;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  background-color: var(--btn-color);
+  border: none;
+  border-radius: 24px;
+  outline: none;
+  cursor: pointer;
+  font-weight: 500;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.btn-dark {
+  color: var(--dark-font);
+}
+.btn-light {
+  color: var(--ligt-font);
+}
+.btn-simple {
+  width: fit-content;
+  height: fit-content;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
