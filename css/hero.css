@@ -112,3 +112,23 @@
   height: 70vh;
   border-radius: 24px;
 }
+
+@media screen and (max-width: 1023px) {
+  .hero-upper {
+    padding: 200px 0 150px 0;
+    height: unset;
+  }
+  .hero-upper__inner {
+    flex-direction: column;
+    gap: 48px;
+  }
+  .hero-upper__content {
+    width: 100%;
+  }
+  .hero-upper__image {
+    width: 100%;
+  }
+  .hero-upper > span {
+    font-size: 10rem;
+  }
+}

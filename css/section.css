@@ -1,0 +1,42 @@
+.section-dark,
+.section-light {
+  padding: var(--spacing) 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.section-dark {
+  background-color: var(--bg-dark-light);
+}
+
+.section-light {
+  background-color: var(--bg-light);
+}
+
+.section__inner {
+  width: var(--inner-width);
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+.section__content {
+  width: 50%;
+}
+.section__content > h6 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--dark-font);
+}
+.section__image {
+  width: 50%;
+}
+
+.section__image > img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+}

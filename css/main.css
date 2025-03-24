@@ -1,7 +1,11 @@
 :root {
+  /* WIDTH */
   --inner-width: min(calc(100% - 32px), 1312px);
   /* min gražina mažesnė reikšmę */
   /* calc apskaičiuoja */
+
+  /* SPACING */
+  --spacing: 96px;
 
   /* COLORS */
   --header-font: #fff;
@@ -9,6 +13,7 @@
   --dark-font: #333;
   --ligt-font: #fff;
   --bg-light: #fff;
+  --bg-dark-light: #f5f1ee;
   /* transition */
   --transition: all 0.3s ease;
 }

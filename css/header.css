@@ -115,10 +115,30 @@ header {
 }
 
 @media screen and (max-width: 1023px) {
+  .header__inner {
+    position: relative;
+  }
   .header__logo {
     font-size: 2rem;
   }
-  .header__main-nav,
+  .header__main-nav {
+    position: absolute;
+    top: calc(100% + 16px);
+    left: -16px;
+    padding: 16px 0;
+    width: calc(100% + 32px);
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(3px);
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition);
+  }
+  .header__main-nav.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
   .header__social-nav {
     display: none;
   }
