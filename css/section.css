@@ -40,3 +40,7 @@
   object-fit: contain;
   object-position: center;
 }
+
+section {
+  display: none !important;
+}
